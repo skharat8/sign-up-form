@@ -1,7 +1,7 @@
 <h1 align="center">Sign-up Form</h1>
 
-<p align="center">An appealing sign-up form for an imaginary brand, Backstage:tm:</p>
-<p align="center">:link: [**Live Preview**](https://skharat8.github.io/sign-up-form)</p>
+<div align="center">*An appealing sign-up form for an imaginary brand, Backstage*:tm:</div>
+<div align="center">:link: [**Live Preview**](https://skharat8.github.io/sign-up-form)</div>
 
 ## Built With
 
