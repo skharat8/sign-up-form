@@ -1,3 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: hero-font;
+  src: url(fonts/black_streamer.ttf);
+}
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+
+  --primary-color: #d8aba9;
+  --dark-accent: #b83e6a;
+  --dark-shade: #231e2f;
+  --light-accent: #97959d;
+  --light-shade: #fafcf3;
+}
+
+h1 {
+  font-family: hero-font, Helvetica, sans-serif;
+  font-size: 3.5rem;
+}
+
+/* TODO: Try out different color palettes */
+/* :root {
+  --primary-color: #4e3c6e;
+  --dark-accent: #593d5f;
+  --dark-shade: #141122;
+  --light-accent: #a38bd7;
+  --light-shade: #eebefa;
+} */
+
+/* :root {
+  --primary-color: #418590;
+  --dark-accent: #d34681;
+  --dark-shade: #291a28;
+  --light-accent: #dc7474;
+  --light-shade: #f6eff3;
+} */
+
 footer {
   color: gray;
   font-style: italic;

@@ -1,6 +1,6 @@
 <h1 style="text-align:center;">Sign-up Form</h1>
 
-<p style="text-align:center;">An appealing sign-up form for an imaginary brand, Red Carpet:tm:</p>
+<p style="text-align:center;">An appealing sign-up form for an imaginary brand, Backstage:tm:</p>
 <div style="text-align:center;">:link: [**Live Preview**](https://skharat8.github.io/sign-up-form)</div>
 
 ## Built With
@@ -12,4 +12,6 @@
 ## Acknowledgements
 
 - Inspired by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
-- [Red Carpet](https://icons8.com/icon/jRiPEnrpKOJZ/red-carpet) Icon by [Icons8](https://icons8.com/)
+- [Backstage](https://icons8.com/icon/jRiPEnrpKOJZ/red-carpet) icon by [Icons8](https://icons8.com/)
+- Background photo by [Jon](https://unsplash.com/@j_mk18) on [Unsplash](https://unsplash.com/photos/r8AFUpRp0J0)
+- Title font from [dafont](https://www.dafont.com/black-streamer.font).
