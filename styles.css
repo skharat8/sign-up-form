@@ -1,4 +1,7 @@
 html {
+  font-family: Helvetica, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.25;
   box-sizing: border-box;
 }
 
@@ -9,14 +12,14 @@ html {
 }
 
 @font-face {
-  font-family: hero-font;
-  src: url(fonts/black_streamer.ttf);
+  font-family: "hero-font";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url(fonts/black_streamer.woff2) format("woff2");
 }
 
 :root {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 62.5%;
-
   --primary-color: #d8aba9;
   --dark-accent: #b83e6a;
   --dark-shade: #231e2f;
@@ -24,9 +27,44 @@ html {
   --light-shade: #fafcf3;
 }
 
+body {
+  display: flex;
+  height: 100svh;
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+}
+
+header {
+  flex: 1;
+  position: relative;
+  background-image: url(images/hero-banner.jpg);
+  background-size: cover;
+}
+
+main {
+  flex: 2;
+}
+
+.hero {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  top: 20%;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
 h1 {
+  color: var(--dark-accent);
+  background-color: transparent;
   font-family: hero-font, Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
+  padding-top: 2rem;
 }
 
 /* TODO: Try out different color palettes */
