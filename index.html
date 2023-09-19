@@ -15,86 +15,84 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="hero">
-          <img src="images/backstage-logo-96.png" alt="Backstage Brand Logo" />
-          <h1>BACKSTAGE</h1>
-        </div>
-      </header>
+    <header>
+      <div class="hero">
+        <img src="images/backstage-logo-96.png" alt="Backstage Brand Logo" />
+        <h1>BACKSTAGE</h1>
+      </div>
 
-      <main class="details">
-        <h3>
-          Get special access to red carpet film screenings, backstage concerts,
-          and exquisite dinners with celebrities. Make everlasting memories at
-          exclusive events.<br /><em>What are you waiting for?</em>
-        </h3>
-
-        <form>
-          <h3>Sign up for your VIP Pass!</h3>
-          <img src="images/vip-pass-64.png" alt="VIP Pass Icon" />
-
-          <div class="form-container">
-            <div>
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" />
-            </div>
-
-            <div>
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" />
-            </div>
-
-            <div>
-              <label for="email">EMAIL</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="example@mail.com"
-              />
-            </div>
-
-            <div>
-              <label for="phone">PHONE NUMBER</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="408-555-6666"
-              />
-            </div>
-
-            <div>
-              <label for="pw">PASSWORD</label>
-              <input type="password" name="pw" id="pw" />
-            </div>
-
-            <div>
-              <label for="confirm-pw">CONFIRM PASSWORD</label>
-              <input type="password" name="confirm-pw" id="confirm-pw" />
-            </div>
-          </div>
-
-          <button type="submit">Create Account</button>
-          <p>Already have an account? <a href="#">Log in</a></p>
-        </form>
-      </main>
-    </div>
-
-    <footer>
       <small>
         Icons by
-        <a
-          href="https://icons8.com/icon/jRiPEnrpKOJZ/red-carpet"
-          target="_blank"
-          >Icons8</a
-        >. Photo by
+        <a href="https://icons8.com" target="_blank">Icons8</a>. Photo by
         <a href="https://unsplash.com/@j_mk18" target="_blank">Jon</a> on
         <a href="https://unsplash.com/photos/r8AFUpRp0J0" target="_blank"
           >Unsplash</a
         >.
       </small>
-    </footer>
+    </header>
+
+    <main class="details">
+      <div class="details__description">
+        <h3>
+          Get special access to red carpet film screenings, backstage concerts,
+          and exquisite dinners with celebrities. Make everlasting memories at
+          exclusive events.<br /><br /><em>What are you waiting for?</em>
+        </h3>
+      </div>
+
+      <form class="details__form" id="main-form">
+        <div class="form-title">
+          <img src="images/vip-pass-64.png" alt="VIP Pass Icon" />
+          <h3>Sign up for your VIP Pass!</h3>
+        </div>
+
+        <div class="form-elements">
+          <div>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+
+          <div>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+
+          <div>
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@mail.com"
+            />
+          </div>
+
+          <div>
+            <label for="phone">PHONE NUMBER</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="408-555-6666"
+            />
+          </div>
+
+          <div>
+            <label for="pw">PASSWORD</label>
+            <input type="password" name="pw" id="pw" />
+          </div>
+
+          <div>
+            <label for="confirm-pw">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-pw" id="confirm-pw" />
+          </div>
+        </div>
+      </form>
+
+      <div class="details__button">
+        <button type="submit" form="main-form">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </main>
   </body>
 </html>
