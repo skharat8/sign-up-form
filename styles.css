@@ -40,7 +40,7 @@ html {
 
 body {
   display: flex;
-  min-height: 100svh;
+  height: 100svh;
   font-size: 1.6rem;
 }
 
@@ -148,11 +148,12 @@ button:hover {
 
 .form-title {
   display: flex;
+  color: var(--dark-shade-2);
   font-style: italic;
   gap: 1rem;
 
   & img {
-    width: 50px;
+    width: 45px;
     object-fit: contain;
   }
 }
