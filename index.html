@@ -54,6 +54,7 @@
               name="first-name"
               id="first-name"
               placeholder="John"
+              required
             />
           </div>
 
@@ -64,6 +65,7 @@
               name="last-name"
               id="last-name"
               placeholder="Smith"
+              required
             />
           </div>
 
@@ -74,6 +76,7 @@
               name="email"
               id="email"
               placeholder="example@mail.com"
+              required
             />
           </div>
 
@@ -83,18 +86,22 @@
               type="tel"
               name="phone"
               id="phone"
-              placeholder="4085556666"
+              placeholder="408-555-6666"
+              maxlength="12"
+              pattern="\d{3}-?\d{3}-?\d{4}"
+              title="Example of a valid phone number: 408-555-6666"
             />
+            <span></span>
           </div>
 
           <div>
             <label for="pw">PASSWORD</label>
-            <input type="password" name="pw" id="pw" />
+            <input type="password" name="pw" id="pw" required />
           </div>
 
           <div>
             <label for="confirm-pw">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-pw" id="confirm-pw" />
+            <input type="password" name="confirm-pw" id="confirm-pw" required />
           </div>
         </div>
       </form>

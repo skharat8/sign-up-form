@@ -1,5 +1,5 @@
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: Tahoma, sans-serif;
   font-size: 62.5%;
   line-height: 1.25;
   box-sizing: border-box;
@@ -79,7 +79,7 @@ header {
   & h1 {
     color: white;
     background-color: transparent;
-    font-family: hero-font, Helvetica, sans-serif;
+    font-family: hero-font, Tahoma, sans-serif;
     font-size: 3rem;
     padding-top: 2rem;
   }
@@ -106,7 +106,7 @@ button {
 }
 
 @media (hover: hover) {
-  button:hover {
+  button:is(:hover, :focus) {
     color: rgb(43, 39, 39);
     background-color: var(--light-shade);
     transform: translateY(-5px);
@@ -171,9 +171,10 @@ button:active {
 .details__form__elements {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3rem;
 
   & div {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -184,4 +185,37 @@ button:active {
     font-weight: bold;
     color: rgb(105, 105, 105);
   }
+
+  & input {
+    width: 24rem;
+    height: 3rem;
+    font-family: Tahoma sans-serif;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+input[id="phone"]:invalid + span::after {
+  position: absolute;
+  content: "✖";
+  left: 22rem;
+  bottom: 0.5rem;
+  color: firebrick;
+}
+
+input[id="phone"]:valid:not(:placeholder-shown) + span::after {
+  position: absolute;
+  content: "✔";
+  left: 22rem;
+  bottom: 0.5rem;
+  color: seagreen;
 }
