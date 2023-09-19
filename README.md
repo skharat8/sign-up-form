@@ -14,6 +14,6 @@
 ## Acknowledgements
 
 - Inspired by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
-- [Backstage](https://icons8.com/icon/cS2EKu8kKCRH/stage) and [VIP Pass](https://icons8.com/icons/set/vip-pass) icons by [Icons8](https://icons8.com/)
+- [Backstage](https://icons8.com/icon/cS2EKu8kKCRH/stage) and [VIP Pass](https://icons8.com/icon/15210/train-ticket) icons by [Icons8](https://icons8.com/)
 - Background photo by [Jon](https://unsplash.com/@j_mk18) on [Unsplash](https://unsplash.com/photos/r8AFUpRp0J0)
 - Title font from [DaFont](https://www.dafont.com/black-streamer.font)
