@@ -15,8 +15,9 @@ html {
   font-family: "hero-font";
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-  src: url(fonts/black_streamer.woff2) format("woff2");
+  font-display: fallback;
+  src: url(fonts/black_streamer.woff2) format("woff2"),
+    url(fonts/black_streamer.ttf) format("truetype");
 }
 
 :root {
