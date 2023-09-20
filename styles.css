@@ -21,35 +21,22 @@ html {
 
 :root {
   --primary-color: #4e3c6e;
-  --dark-accent: #593d5f;
-  --dark-shade: #141122;
   --light-accent: #a38bd7;
   --light-shade: #eebefa;
-
-  --dark-accent-2: #d8862f;
-  --dark-shade-2: #b75514;
+  --secondary-color: #b75514;
 
   --before-element-color: firebrick;
 }
 
-/* :root {
-  --primary-color: #c964e9;
-  --dark-accent-2: #d8862f;
-  --dark-shade-2: #b75514;
-  --light-accent: #7519a5;
-  --light-shade: #a443cc;
-} */
-
 body {
   display: flex;
-  min-height: 100svh;
   font-size: 1.6rem;
 }
 
 header {
   flex: 1;
+  min-height: 100svh;
   position: relative;
-  min-width: 40rem;
   background-image: url(images/hero-banner.jpg);
   background-size: cover;
 
@@ -92,7 +79,6 @@ main {
   display: flex;
   flex-direction: column;
   background-color: rgb(219, 216, 226);
-  align-items: stretch;
 }
 
 button {
@@ -145,7 +131,7 @@ button:active {
   padding: 5rem;
 
   & a {
-    color: var(--dark-shade-2);
+    color: var(--secondary-color);
   }
 }
 
@@ -160,7 +146,7 @@ button:active {
 
 .details__form__title {
   display: flex;
-  color: var(--dark-shade-2);
+  color: var(--secondary-color);
   gap: 1rem;
 
   & img {
@@ -184,7 +170,6 @@ button:active {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-basis: 35%;
   }
 
   & label {
@@ -246,4 +231,20 @@ input[id="confirm-pw"]:valid:not(:placeholder-shown) + span::after {
 
 .pw-requirements p:first-child {
   text-decoration: underline;
+}
+
+/* Mobile Layout */
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    min-height: 60svh;
+    background-position: center 75%;
+  }
+
+  .details__description {
+    min-height: 40svh;
+  }
 }

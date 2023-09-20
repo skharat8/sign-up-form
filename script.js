@@ -53,8 +53,8 @@ function showCross(element) {
   element.style.setProperty("--before-element-color", "firebrick");
 }
 
-function checkPasswordMatch(e) {
-  if (e.target.value === pw.value) {
+function checkPasswordMatch() {
+  if (pwConfirm.value === pw.value) {
     pwConfirm.setCustomValidity("");
   } else {
     pwConfirm.setCustomValidity("Passwords don't match!");
