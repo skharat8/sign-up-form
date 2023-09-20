@@ -47,61 +47,90 @@
         </div>
 
         <div class="details__form__elements">
-          <div>
-            <label for="first-name">FIRST NAME</label>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="John"
-              required
-            />
+          <div class="form-elements-container">
+            <div>
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="John"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Smith"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@mail.com"
+                required
+              />
+              <span></span>
+            </div>
+
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="408-555-6666"
+                maxlength="12"
+                pattern="\d{3}-?\d{3}-?\d{4}"
+                title="Example of a valid phone number: 408-555-6666"
+              />
+              <span></span>
+            </div>
+
+            <div>
+              <label for="pw">PASSWORD</label>
+              <input
+                type="password"
+                name="pw"
+                id="pw"
+                minlength="6"
+                pattern="(?=^.{6,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="confirm-pw">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-pw"
+                id="confirm-pw"
+                minlength="6"
+                pattern="(?=^.{6,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$"
+                required
+              />
+            </div>
           </div>
 
-          <div>
-            <label for="last-name">LAST NAME</label>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Smith"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="email">EMAIL</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@mail.com"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="phone">PHONE NUMBER</label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="408-555-6666"
-              maxlength="12"
-              pattern="\d{3}-?\d{3}-?\d{4}"
-              title="Example of a valid phone number: 408-555-6666"
-            />
-            <span></span>
-          </div>
-
-          <div>
-            <label for="pw">PASSWORD</label>
-            <input type="password" name="pw" id="pw" required />
-          </div>
-
-          <div>
-            <label for="confirm-pw">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-pw" id="confirm-pw" required />
+          <div class="pw-requirements">
+            <p>Password requirements:</p>
+            <p class="length" data-before="✖ ">6 to 20 characters</p>
+            <p class="lowercase" data-before="✖ ">
+              Includes a lowercase letter
+            </p>
+            <p class="uppercase" data-before="✖ ">
+              Includes a uppercase letter
+            </p>
+            <p class="number" data-before="✖ ">Includes a number</p>
           </div>
         </div>
       </form>

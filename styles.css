@@ -1,5 +1,5 @@
 html {
-  font-family: Tahoma, sans-serif;
+  font-family: Tahoma sans-serif;
   font-size: 62.5%;
   line-height: 1.25;
   box-sizing: border-box;
@@ -28,6 +28,8 @@ html {
 
   --dark-accent-2: #d8862f;
   --dark-shade-2: #b75514;
+
+  --before-element-color: firebrick;
 }
 
 /* :root {
@@ -79,7 +81,7 @@ header {
   & h1 {
     color: white;
     background-color: transparent;
-    font-family: hero-font, Tahoma, sans-serif;
+    font-family: hero-font Tahoma sans-serif;
     font-size: 3rem;
     padding-top: 2rem;
   }
@@ -170,6 +172,11 @@ button:active {
 
 .details__form__elements {
   display: flex;
+}
+
+.form-elements-container {
+  display: flex;
+  flex: 0 1 600px;
   flex-wrap: wrap;
   gap: 3rem;
 
@@ -177,7 +184,7 @@ button:active {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 35%;
+    flex-basis: 35%;
   }
 
   & label {
@@ -189,7 +196,6 @@ button:active {
   & input {
     width: 24rem;
     height: 3rem;
-    font-family: Tahoma sans-serif;
     border: 1px solid gainsboro;
     border-radius: 5px;
     outline: none;
@@ -202,9 +208,11 @@ input::placeholder {
 
 input:focus {
   border: 2px solid var(--primary-color);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
 }
 
-input[id="phone"]:invalid + span::after {
+input[id="phone"]:invalid + span::after,
+input[id="email"]:invalid:not(:placeholder-shown) + span::after {
   position: absolute;
   content: "✖";
   left: 22rem;
@@ -212,10 +220,26 @@ input[id="phone"]:invalid + span::after {
   color: firebrick;
 }
 
-input[id="phone"]:valid:not(:placeholder-shown) + span::after {
+input[id="phone"]:valid:not(:placeholder-shown) + span::after,
+input[id="email"]:valid:not(:placeholder-shown) + span::after {
   position: absolute;
   content: "✔";
   left: 22rem;
   bottom: 0.5rem;
   color: seagreen;
+}
+
+.pw-requirements {
+  font-style: italic;
+  line-height: 0.8;
+  visibility: hidden;
+
+  & *:not(p:first-child)::before {
+    content: attr(data-before);
+    color: var(--before-element-color);
+  }
+}
+
+.pw-requirements p:first-child {
+  text-decoration: underline;
 }
