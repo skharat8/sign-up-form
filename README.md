@@ -3,8 +3,6 @@
 <p align="center"><em>An appealing sign-up form for an imaginary brand, Backstage:tm:</em></p>
 <p align="center">:link: <a href="https://skharat8.github.io/sign-up-form"><strong>Live Preview</strong></a></p>
 
-<p align="center"><br/><u>Note</u>: This is made for desktop only</p>
-
 ## Built With
 
 - HTML5
