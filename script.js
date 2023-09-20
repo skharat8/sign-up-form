@@ -20,6 +20,7 @@ function hidePwRequirements(e) {
 
 let pwRequirements = document.querySelectorAll(".pw-requirements p");
 pw.addEventListener("input", checkRequirements);
+pwConfirm.addEventListener("input", checkPasswordMatch);
 
 function checkRequirements(e) {
   let password = e.target.value;
@@ -50,4 +51,12 @@ function showCheck(element) {
 function showCross(element) {
   element.setAttribute("data-before", "✖ ");
   element.style.setProperty("--before-element-color", "firebrick");
+}
+
+function checkPasswordMatch(e) {
+  if (e.target.value === pw.value) {
+    pwConfirm.setCustomValidity("");
+  } else {
+    pwConfirm.setCustomValidity("Passwords don't match!");
+  }
 }

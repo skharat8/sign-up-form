@@ -212,7 +212,9 @@ input:focus {
 }
 
 input[id="phone"]:invalid + span::after,
-input[id="email"]:invalid:not(:placeholder-shown) + span::after {
+input[id="email"]:invalid:not(:placeholder-shown) + span::after,
+input[id="pw"]:invalid:not(:placeholder-shown) + span::after,
+input[id="confirm-pw"]:invalid:not(:placeholder-shown) + span::after {
   position: absolute;
   content: "✖";
   left: 22rem;
@@ -221,7 +223,9 @@ input[id="email"]:invalid:not(:placeholder-shown) + span::after {
 }
 
 input[id="phone"]:valid:not(:placeholder-shown) + span::after,
-input[id="email"]:valid:not(:placeholder-shown) + span::after {
+input[id="email"]:valid:not(:placeholder-shown) + span::after,
+input[id="pw"]:valid:not(:placeholder-shown) + span::after,
+input[id="confirm-pw"]:valid:not(:placeholder-shown) + span::after {
   position: absolute;
   content: "✔";
   left: 22rem;
